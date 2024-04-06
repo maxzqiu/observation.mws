@@ -76,9 +76,11 @@ time=""
 if (pm===false && dst==="07"){
     time=hour+min+" AM  PDT "+Dates
 } else if (pm===false && dst==="08"){
+    time=hour+min+" AM  PST "+Dates
 } else if (pm===true && dst==="07"){
-} else {
     time=hour+min+" PM  PDT "+Dates
+} else {
+    time=hour+min+" PM  PST "+Dates
 }
 console.log(time)
 
@@ -106,7 +108,7 @@ if (UtcDay<10){
 }
 console.log(UtcDay);
 UtcDay=parseInt(UtcDay)
-if (militaryhour===0 || militaryhour>0 || militaryhour<dst){
+if (militaryhour>-1 && militaryhour<dst){
     UtcDay=UtcDay+=1
 }
 
