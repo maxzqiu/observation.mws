@@ -73,11 +73,11 @@ console.log(min)
 min=min.toString()
 hour=hour.toString()
 time=""
-if (pm===false && dst==="07"){
+if (pm===false && dst===7){
     time=hour+min+" AM  PDT "+Dates
-} else if (pm===false && dst==="08"){
+} else if (pm===false && dst===8){
     time=hour+min+" AM  PST "+Dates
-} else if (pm===true && dst==="07"){
+} else if (pm===true && dst===7){
     time=hour+min+" PM  PDT "+Dates
 } else {
     time=hour+min+" PM  PST "+Dates
