@@ -53,8 +53,9 @@ let Dates=""
 Dates=Datetime.substring(0,15)
 let hour=Datetime.substring(16,18)
 let militaryhour=hour
-hour=parseInt(hour)
+
 console.log(hour)
+hour=parseInt(hour)
 
 pm=false
 if (hour===12){
