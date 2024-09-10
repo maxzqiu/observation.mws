@@ -105,13 +105,14 @@ console.log(militaryhour)
 console.log(zero+militaryhour);
 let UtcDay=Dates.substring(8,10);
 let DayZero=""
-if (UtcDay<10){
-    DayZero="0"
-}
+
 console.log(UtcDay);
 UtcDay=parseInt(UtcDay)
 if (militaryhour>-1 && militaryhour<dst){
     UtcDay=UtcDay+=1
+}
+if (UtcDay<10){
+    DayZero="0"
 }
 
 console.log(UtcDay)
